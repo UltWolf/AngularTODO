@@ -8,7 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class ColumnComponent implements OnInit {
   Column_id: number;
   Name: string;
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
   }

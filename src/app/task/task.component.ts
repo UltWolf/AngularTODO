@@ -1,17 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
 
 @Component({
-  selector: 'app-task',
-  templateUrl: './task.component.html',
-  styleUrls: ['./task.component.sass']
+  selector: "app-task",
+  templateUrl: "./task.component.html",
+  styleUrls: ["./task.component.scss"]
 })
 export class TaskComponent implements OnInit {
-
-  constructor() { }
-  Title: string;
-  Description: string;
-  Period: Date;
-  ngOnInit() {
+  constructor(public title:string, public description:string) {
   }
-
+  ngOnInit() {}
 }

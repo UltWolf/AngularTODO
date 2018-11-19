@@ -5,8 +5,8 @@ import { Component, OnInit } from "@angular/core";
   templateUrl: "./task.component.html",
   styleUrls: ["./task.component.scss"]
 })
-export class TaskComponent implements OnInit {
-  constructor(public title:string, public description:string) {
-  }
-  ngOnInit() {}
+export class TaskComponent {
+  id: number;
+  title: string;
+  description:string;
 }

@@ -28,10 +28,10 @@ export class ColumnComponent implements OnInit {
   }
   addTodo(x) {
     if (this.Tasks.length == 0) {
-      this.Tasks = [{ id: this.incrementid, title: x, description: x }];
+      this.Tasks = [{ id: this.incrementid, title: x.title, description: x.description }];
     } else {
       this.incrementid = this.incrementid["id"] + 1;
-      this.Tasks.push({ id: this.incrementid, title: x, description: x });
+      this.Tasks.push({ id: this.incrementid, title: x.title, description: x.description });
     }
   }
   addDone(x) {
